@@ -9,7 +9,11 @@ import { RouterLink, RouterOutlet } from '@angular/router';
     <h1>Welcome to {{ title }}!</h1>
     <nav>
       <p><a routerLink="alfa">Local alfa</a></p>
-      <p><a routerLink="beta">Local beta</a></p>
+      <p>
+        <a routerLink="beta" [queryParams]="{ q: 'Prueba local' }"
+          >Local beta</a
+        >
+      </p>
     </nav>
     <router-outlet />
   `,
